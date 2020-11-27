@@ -1,0 +1,62 @@
+What is a WebElement?
+Anything we see on the webpage is considered to be a webelement
+e.g. buttons, dropdowns, textboxes, checkboxes
+
+HTML?
+HyperText Markup Language
+
+What is DOM?
+DOM stands for Document Object Model. It is a browser's internal view of the webpage.
+Also called Developer's tools
+Document -- can be stored any document, like pdf, excel or word
+Object -- any line inside HTML is called an Object
+Model -- it is just a layout of the HTML file
+
+Locator:
+is a address or a position of an webelement in the webpage
+is used to locate or identify a specific element on the webpage
+
+8 Locators:
+-- id
+-- name
+-- className
+-- linkText
+-- partialLinkText
+-- xpath
+-- cssSelector
+-- tagName
+
+HTML scripting meaning:
+purple -- tags
+brown -- attributes
+blue -- attribute values
+
+Why do we need many locators?
+-- Developers may not provide all the locators for elements
+-- Some locators might have duplicate values in the other nodes
+-- Some locators may not be applicable to all the elements
+        e.g. linkText and PartialLinkText are only used for links
+
+"a" tag in HTML is called an anchor tag
+
+
+Task
+Navigate to http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx
+Login
+Get title and verify
+logout
+close the browser
+
+
+Homework
+navigate to https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22
+fill out the form
+click on register
+close the browser
+
+navigate to fb.com
+click on create new account
+fill up all the textboxes
+click on sign up button
+close the pop up
+close the browser
