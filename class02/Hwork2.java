@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Hwork2 {
     public static void main (String[] args) throws InterruptedException {
-        System.setProperty ( "webdriver.chrome.driver", "C:\\Users\\sofiane\\eclipse-workspace\\SeleniumBasics\\drivers/chromedriver.exe" );
+        System.setProperty ( "webdriver.chrome.driver", "drivers/chromedriver.exe" );
         WebDriver driver = new ChromeDriver ( );
         driver.get ( "https://www.facebook.com/" );
         driver.findElement ( By.id ( "u_0_2" ) ).click ( );
@@ -20,6 +20,12 @@ public class Hwork2 {
         driver.findElement ( By.name ( "reg_email_confirmation__" ) ).sendKeys ( "Jet.Fighter@gmail.com" );
         Thread.sleep ( 2000 );
         driver.findElement ( By.name ( "reg_passwd__" ) ).sendKeys ( "Mig31" );
+        Thread.sleep ( 2000 );
+        driver.findElement ( By.id ( "month" ) ).sendKeys ( "Jan" );
+        Thread.sleep ( 2000 );
+        driver.findElement ( By. name ( "birthday_day" )).sendKeys ( "15" );
+        Thread.sleep ( 2000 );
+        driver.findElement ( By.id ( "year" ) ).sendKeys ( "1977" );
         Thread.sleep ( 2000 );
         driver.findElement ( By.id ( "u_1_s" ) ).click ( );
         Thread.sleep ( 3000 );

@@ -1,0 +1,64 @@
+Class 04
+
+CSS Selectors (Cascading Styling Sheet)
+
+It is another way to locate an element uniquely
+Syntax:
+tagname[attribute = 'attribute value']
+
+Example: button[type = 'submit']
+
+Css does not give you an opportunity to identify an element by text
+
+Shortcuts for css:
+       Shortcut for className: "." -- classname
+       tagname.classNameValue
+      Example: input.nav-input
+
+        Shortcut for ID: "#" -- ID
+        tagname#idValue
+        Example: input#twotabsearchtextbox
+
+contains() method in css:
+* symbol represents contains() method -- tagname[attribute *= 'containing attribute value']
+Example: span[class *= 'form']
+
+starts-with method in css:
+^ symbol represents statrs-with method -- tagname[attribute ^= 'starting attribute value']
+Example: input[id ^= 'btn']
+
+ends-with method in css:
+$ symbol represents ens-with method -- tagname[attribute $= 'ending attribute value']
+Example: img[src $= 'syntax.png']
+
+WebElement Commands:
+consist of several methods where we can perform actions and get element state on the web page
+
+isEnabled() -- boolean value
+isSelected() -- boolean value
+isDisplayed() -- boolean value
+clear() -- void
+getText() -- String value
+getAttribute() -- string value
+
+Task
+Open chrome browser
+Go to “http://18.232.148.34/humanresources/symfony/web/index.php/auth/login”
+Enter valid username and password (username - Admin, password - Hum@nhrm123)
+Click on login button
+Then verify Syntax Logo is displayed.
+
+TC 1: Amazon link count:
+Open chrome browser
+Go to “https://www.amazon.com/”
+Get all links
+Get number of links that has text
+Print to console only the links that has text
+
+HW 2
+HRMS Application Negative Login:
+Open chrome browser
+Go to “http://18.232.148.34/humanresources/symfony/web/index.php/auth/login”
+Enter valid username
+Leave password field empty
+Verify error message with text “Password cannot be empty” is displayed.
