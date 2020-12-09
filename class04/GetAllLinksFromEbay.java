@@ -12,8 +12,8 @@ public class GetAllLinksFromEbay {
     public static void main (String[] args) throws InterruptedException {
         System.setProperty ( "webdriver.chrome.driver", "drivers/chromedriver.exe" );
         WebDriver driver = new ChromeDriver ( );
-
         driver.get ( "https://www.ebay.com/" );
+
         List<WebElement> allLinks = driver.findElements ( By.tagName ( "a" ) );
         System.out.println ( allLinks.size ( ) );
         for (WebElement link : allLinks) {
