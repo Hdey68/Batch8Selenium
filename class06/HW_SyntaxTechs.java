@@ -36,8 +36,10 @@ click on each button and handle the alert accordingly
         Alert promptBox=driver.switchTo ( ).alert ( );
         Thread.sleep ( 1000 );
         promptBox.sendKeys ( "My name is Sofiane" );
-        Thread.sleep ( 3000 );
+        Thread.sleep ( 1000 );
         promptBox.accept ();
+        Thread.sleep ( 2000 );
+        driver.quit ();
 
     }
 }
