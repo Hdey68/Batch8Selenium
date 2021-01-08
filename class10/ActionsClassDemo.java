@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class ActionsClassDemo {
 
-    public static void main (String[] args) {
+    public static void main (String[] args) throws InterruptedException {
 
         System.setProperty ( "webdriver.chrome.driver", "drivers/chromedriver.exe" );
         WebDriver driver = new ChromeDriver ( );
@@ -17,6 +17,7 @@ public class ActionsClassDemo {
         driver.manage ( ).window ( ).maximize ( );
         WebElement accountsAndLists=driver.findElement ( By.id ( "nav-link-accountList" ) );
         Actions action=new Actions (driver);
+        Thread.sleep ( 2000 );
         action.moveToElement ( accountsAndLists ).perform ();
     }
 }
